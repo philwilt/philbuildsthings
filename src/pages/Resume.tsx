@@ -6,7 +6,7 @@ const Resume = () => {
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4">Phil Wilt</h1>
           <h2 className="text-2xl text-gray-400 mb-6">
-            Senior Software Engineer / AI Systems Builder / Technical Architect
+            Full-Stack Software Engineer / AI Systems Builder / Technical Architect
           </h2>
 
           <button className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
@@ -14,53 +14,50 @@ const Resume = () => {
           </button>
         </div>
 
-        {/* Summary */}
+        {/* About */}
         <section className="bg-gray-800 border border-gray-700 rounded-lg p-8 mb-8">
-          <h3 className="text-2xl font-bold text-white mb-4">Summary</h3>
-          <p className="text-gray-300 leading-relaxed text-lg">
-            Full-stack engineer and technical leader specializing in distributed systems, cloud
-            architecture, and agentic AI pipelines. I design production platforms that connect
-            policy, data, and execution — from SaaS-scale infrastructure to real-world maker
-            systems.
-          </p>
-        </section>
-
-        {/* Skills */}
-        <section className="bg-gray-800 border border-gray-700 rounded-lg p-8 mb-8">
-          <h3 className="text-2xl font-bold text-white mb-6">Skills</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">Languages</h4>
-              <p className="text-gray-300">Python, TypeScript, Ruby, Node.js, JavaScript</p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">Frontend</h4>
-              <p className="text-gray-300">React, Vite, Tailwind CSS, Next.js</p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">Cloud & Infrastructure</h4>
-              <p className="text-gray-300">AWS, GCP, Amplify, Terraform, Docker</p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">AI/ML</h4>
-              <p className="text-gray-300">
-                RAG, LangGraph, Model Evaluation, Vector Search, Prompt Engineering
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">Hardware & Fabrication</h4>
-              <p className="text-gray-300">CNC Machining, Laser Engraving, 3D Printing, CAD</p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-primary-400 mb-3">Databases</h4>
-              <p className="text-gray-300">PostgreSQL, MongoDB, Redis, Vector DBs</p>
-            </div>
+          <h3 className="text-2xl font-bold text-white mb-4">About</h3>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p>
+              I'm a full-stack software engineer with 10+ years of experience designing scalable
+              SaaS systems, including 4+ years building production AI systems. My work focuses on
+              AI-enabled platforms, execution architectures, and agent-like workflows—where
+              retrieval, computation, and feedback loops work together to deliver reliable,
+              real-world intelligence.
+            </p>
+            <p>
+              My background is grounded in mathematics (B.A. in Mathematics), with deep study in
+              applied linear algebra, abstract algebra, numerical analysis, geometric modeling, and
+              artificial intelligence. That foundation shapes how I design modern AI systems,
+              particularly embeddings, vector representations, dependency graphs, and execution
+              models that emphasize determinism, explainability, and operational safety.
+            </p>
+            <p>
+              I spent six years at Aha! shipping large, customer-facing features across Rails,
+              Node.js, and React. I helped launch a real-time collaborative editor and later
+              extended it with OpenSearch-based semantic retrieval across product records. That work
+              evolved into Aha!'s AI Assistant, where LLMs were used in production to generate
+              structured content for release notes, marketing copy, and product
+              documentation—grounded in structured product data rather than free-form prompts. In
+              parallel, I designed a dependency-driven execution engine that safely recomputed
+              derived state at scale, providing a deterministic runtime for complex, agent-like
+              workflows and influencing later event-driven integrations.
+            </p>
+            <p>
+              Before Aha!, I served as Technical Lead at Onehub for Marshal.io, a serverless
+              data-loss-prevention platform built on AWS Lambda and Step Functions. There, I
+              designed autonomous inference pipelines for large-scale sensitive-data detection
+              across cloud storage providers—work that led to co-invention of U.S. Patent 10,726,154
+              for distributed identification of personally identifiable information. Earlier in my
+              career, I built HIPAA-compliant healthcare collaboration software on Google Cloud
+              Platform at Samepage.
+            </p>
+            <p>
+              I'm currently continuing postgraduate study in AI, machine learning, and generative
+              AI, with a focus on building systems that earn trust in production—combining strong
+              engineering fundamentals with intelligent capabilities that scale, fail safely, and
+              remain inspectable over time.
+            </p>
           </div>
         </section>
 
@@ -72,67 +69,193 @@ const Resume = () => {
             {/* Aha! */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h4 className="text-xl font-bold text-white">Principal / Senior Engineer</h4>
-                <span className="text-gray-400">2020 - Present</span>
+                <h4 className="text-xl font-bold text-white">Senior Software Engineer</h4>
+                <span className="text-gray-400">Jul 2018 - Dec 2024 · 6 yrs 6 mos</span>
               </div>
-              <p className="text-primary-400 mb-3">Aha!</p>
+              <p className="text-primary-400 mb-3">Aha! · Seattle, Washington</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  Led development of distributed systems handling millions of requests daily
+                  Launched a real-time collaborative editor and later added OpenSearch-based
+                  semantic retrieval and clustering across product records; this foundation evolved
+                  into Aha!'s AI Assistant, using ChatGPT to generate summaries and drafts for
+                  release notes, marketing content, and descriptions of records.
                 </li>
                 <li>
-                  Architected cloud infrastructure and deployment pipelines for SaaS platform
+                  Defined and delivered a dependency-driven execution engine for user-defined logic,
+                  enabling safe, ordered recomputation of derived state—functioning as a
+                  deterministic runtime for agent-like workflows with cycle detection, bounded
+                  depth, and actionable errors.
                 </li>
-                <li>Mentored engineering teams on best practices and system design</li>
+                <li>
+                  Prototyped event-driven dependency models to observe record changes and trigger
+                  targeted recomputation, influencing Aha!'s later Kafka-based integration
+                  architecture for reactive, cross-system updates.
+                </li>
+              </ul>
+              <p className="text-gray-500 text-sm mt-3">
+                Ruby · Ruby on Rails · JavaScript · React.js · TypeScript · RAG · Semantic Search ·
+                Reactive Programming
+              </p>
+            </div>
+
+            {/* Onehub */}
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">Software Development Engineer</h4>
+                <span className="text-gray-400">Jan 2016 - Jul 2018 · 2 yrs 7 mos</span>
+              </div>
+              <p className="text-primary-400 mb-3">Onehub · Seattle, WA</p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>
+                  Led architecture and served as Technical Lead for Marshal.io, a serverless
+                  data-loss-prevention platform performing large-scale automated content analysis
+                  and sensitive-data classification across cloud storage providers (iCloud, Google
+                  Drive, Dropbox, S3).
+                </li>
+                <li>
+                  Designed and built a scalable, serverless AWS execution pipeline (Lambda, Step
+                  Functions, Rails API) to run parallel, inference-style workloads for PII
+                  detection, emphasizing deterministic execution, safe retries, and cost-efficient
+                  throughput at production scale.
+                </li>
+                <li>
+                  Co-inventor of U.S. Patent 10,726,154, covering distributed, automated
+                  identification of sensitive information across cloud environments.
+                </li>
               </ul>
             </div>
 
-            {/* Marshal.io */}
+            {/* Samepage Health */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h4 className="text-xl font-bold text-white">AI & Infrastructure Engineer</h4>
-                <span className="text-gray-400">2018 - 2020</span>
+                <h4 className="text-xl font-bold text-white">Lead Software Engineer</h4>
+                <span className="text-gray-400">Dec 2014 - Dec 2015 · 1 yr 1 mo</span>
               </div>
-              <p className="text-primary-400 mb-3">Marshal.io</p>
+              <p className="text-primary-400 mb-3">Samepage Health · Seattle, WA</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Built intelligent data pipelines and evaluation systems</li>
-                <li>Implemented RAG-based systems for knowledge retrieval</li>
-                <li>Designed policy-driven execution graphs for agentic workflows</li>
+                <li>
+                  Lead full-stack developer for a SaaS healthcare platform driving patient behavior
+                  change and clinic engagement.
+                </li>
+                <li>
+                  Implemented HIPAA-compliant infrastructure on Google Cloud Platform (GCP),
+                  ensuring data security and privacy in production.
+                </li>
+                <li>
+                  Collaborated with clinical trial partners to translate medical research
+                  requirements into functional product features.
+                </li>
               </ul>
             </div>
 
-            {/* Samepage */}
+            {/* Software Consultant */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h4 className="text-xl font-bold text-white">Platform Engineer</h4>
-                <span className="text-gray-400">2015 - 2018</span>
+                <h4 className="text-xl font-bold text-white">Software Consultant</h4>
+                <span className="text-gray-400">Jan 2011 - Nov 2014 · 3 yrs 11 mos</span>
               </div>
-              <p className="text-primary-400 mb-3">Samepage</p>
+              <p className="text-primary-400 mb-3">Self Employed · Greater Seattle Area · Remote</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Developed real-time collaboration features and APIs</li>
-                <li>Optimized database performance and query efficiency</li>
-                <li>Built scalable backend services for growing user base</li>
+                <li>
+                  Delivered the core platform for Hapide, an entrepreneurship accelerator partnered
+                  with the United Nations Development Programme (UNDP), supporting youth and women
+                  founders across the Balkans.
+                </li>
+                <li>
+                  Built and launched a high-traffic promotional website for a major media release by
+                  a globally recognized recording artist, supporting a time-sensitive international
+                  launch.
+                </li>
+                <li>
+                  Advised a non-profit legal justice platform on technology strategy, contributing
+                  to its incorporation into American Public Media.
+                </li>
               </ul>
+            </div>
+
+            {/* Undisclosed */}
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">Software Developer</h4>
+                <span className="text-gray-400">Jul 2013 - Oct 2013 · 4 mos</span>
+              </div>
+              <p className="text-primary-400 mb-3">Undisclosed · Greater Seattle Area</p>
+              <p className="text-gray-300">
+                Selected as the sole in-country engineer in Taipei, leading a months-long
+                international partnership between U.S. and Taiwanese teams to integrate a
+                geolocation advertising API; translated business and technical requirements across
+                cultures, unblocked both sides, and shipped the integration into a live consumer
+                app.
+              </p>
+            </div>
+
+            {/* Juked */}
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">Software Engineer</h4>
+                <span className="text-gray-400">Jul 2012 · 1 mo</span>
+              </div>
+              <p className="text-primary-400 mb-3">Juked, Inc · Contract · Seattle, Washington</p>
+              <p className="text-gray-300">
+                Built an MVP for an ambient audio recognition startup, validating compact
+                audio-fingerprinting pipelines using Hamming-distance matching on global radio
+                broadcasts, designed to pair with custom pre-GPU hardware acceleration and support
+                investor evaluation.
+              </p>
+            </div>
+
+            {/* Microsoft Kinect Accelerator */}
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">Lead Software Developer</h4>
+                <span className="text-gray-400">2012</span>
+              </div>
+              <p className="text-primary-400 mb-3">
+                Microsoft Kinect Accelerator · Contract · Greater Seattle Area
+              </p>
+              <p className="text-gray-300">
+                Led development of spatial computing pipelines, translating 3D spatial capture into
+                voxelized representations and integrating with a custom volumetric display using
+                proprietary projection hardware and 3M light-absorbing materials. And just for fun
+                we used the data to 3D print figures of people.
+              </p>
             </div>
           </div>
         </section>
 
         {/* Education */}
         <section className="bg-gray-800 border border-gray-700 rounded-lg p-8">
-          <h3 className="text-2xl font-bold text-white mb-6">Education & Certifications</h3>
+          <h3 className="text-2xl font-bold text-white mb-6">Education</h3>
 
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-xl font-semibold text-white">Computer Science</h4>
-              <p className="text-gray-400">University Name</p>
+          <div className="space-y-6">
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">
+                  Bachelor of Arts (B.A.) in Mathematics
+                </h4>
+                <span className="text-gray-400">2009 - 2014</span>
+              </div>
+              <p className="text-primary-400 mb-3">University of Washington</p>
+              <p className="text-gray-300">
+                Coursework in Applied Linear Algebra, Abstract Algebra, Artificial Intelligence, and
+                Computer Graphics & Image Processing. Built strong foundations in matrix methods,
+                numerical computation, probabilistic reasoning, and geometric modeling—skills that
+                directly support modern machine-learning systems, vector representations, and
+                AI-driven data workflows.
+              </p>
             </div>
 
-            <div className="pt-4">
-              <h4 className="text-lg font-semibold text-primary-400 mb-2">Continuous Learning</h4>
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">
+                  Certificate in AI, Machine Learning and Generative AI
+                </h4>
+                <span className="text-gray-400">Aug 2025 - May 2026</span>
+              </div>
+              <p className="text-primary-400 mb-3">Texas McCombs School of Business</p>
               <p className="text-gray-300">
-                Active contributor to open-source projects. Regular attendee of tech conferences
-                and maker faires. Self-directed learning in AI/ML, cloud architecture, and digital
-                fabrication.
+                Coursework includes Agentic AI, Neural Networks, Machine Learning, Model Deployment,
+                Generative AI Business Applications.
               </p>
             </div>
           </div>
