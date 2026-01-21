@@ -45,7 +45,7 @@ const Home = () => {
 
             <Card
               title="Maker Lab"
-              description="CNC, laser engraving, 3D printing, and physical product design — bridging code and craftsmanship."
+              description="Laser cutting and engraving, 3D printing, Raspberry Pi projects, and physical product design — bridging code and craftsmanship."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -72,12 +72,16 @@ const Home = () => {
               gradient="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
             />
             <PlaceholderImage
-              title="CNC & Fabrication"
+              title="Laser & Fabrication"
               gradient="bg-gradient-to-br from-orange-500 via-red-500 to-pink-500"
             />
             <PlaceholderImage
               title="3D Printing & Prototyping"
               gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
+            />
+            <PlaceholderImage
+              title="Raspberry Pi Projects"
+              gradient="bg-gradient-to-br from-pink-500 via-rose-500 to-red-500"
             />
             <PlaceholderImage
               title="Creative Technology"

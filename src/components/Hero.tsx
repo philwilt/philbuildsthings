@@ -17,7 +17,7 @@ const Hero = () => {
             <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
               I'm a full-stack engineer and AI systems builder who designs and ships production
               software, intelligent pipelines, and physical maker projects — from cloud
-              infrastructure and agentic AI systems to CNC, lasers, and 3D printing.
+              infrastructure and agentic AI systems to laser cutting, 3D printing, and Raspberry Pi.
             </p>
           </div>
 

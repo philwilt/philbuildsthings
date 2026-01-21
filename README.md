@@ -158,7 +158,7 @@ This site follows the structure and quality of [phil-takes-photos](https://githu
 
 - Software engineering projects
 - AI and agentic systems
-- Maker lab work (CNC, laser, 3D printing)
+- Maker lab work (laser cutting and engraving, 3D printing, Raspberry Pi)
 - Technical architecture
 
 ## 🔗 Related Projects
