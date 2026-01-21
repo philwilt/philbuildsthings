@@ -17,7 +17,7 @@ const Navbar = () => {
             to="/"
             className="text-xl font-bold text-white hover:text-primary-400 transition-colors"
           >
-            Phil Builds Stuff
+            Phil Builds Things
           </Link>
 
           <div className="flex items-center space-x-8">

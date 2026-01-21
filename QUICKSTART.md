@@ -1,10 +1,10 @@
-# Quick Start Guide - Phil Builds Stuff
+# Quick Start Guide - Phil Builds Things
 
 ## 🚀 Getting Started in 3 Steps
 
 ### Step 1: Install Dependencies
 ```bash
-cd philbuildsstuff
+cd philbuildsthings
 npm install
 ```
 

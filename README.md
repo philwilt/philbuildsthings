@@ -1,4 +1,4 @@
-# Phil Builds Stuff
+# Phil Builds Things
 
 A production-ready personal brand website showcasing software engineering, AI systems, and maker projects. Built with modern web technologies and optimized for AWS Amplify deployment.
 
@@ -14,7 +14,7 @@ A production-ready personal brand website showcasing software engineering, AI sy
 ## 📁 Project Structure
 
 ```
-philbuildsstuff/
+philbuildsthings/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # Reusable UI components
@@ -49,8 +49,8 @@ philbuildsstuff/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/philwilt/philbuildsstuff.git
-cd philbuildsstuff
+git clone https://github.com/philwilt/philbuildsthings.git
+cd philbuildsthings
 ```
 
 2. Install dependencies:
@@ -122,7 +122,7 @@ The application will be available at `http://localhost:3000`
 
 5. **Custom Domain** (Optional)
    - In Amplify console, go to "Domain management"
-   - Add your custom domain (e.g., philbuildsstuff.com)
+   - Add your custom domain (e.g., philbuildsthings.com)
    - Follow DNS configuration steps
 
 ### Continuous Deployment
@@ -177,7 +177,7 @@ This is a personal portfolio site. If you find bugs or have suggestions, feel fr
 
 - GitHub: [@philwilt](https://github.com/philwilt)
 - Email: phil@example.com
-- Portfolio: [philbuildsstuff.com](https://philbuildsstuff.com)
+- Portfolio: [philbuildsthings.com](https://philbuildsthings.com)
 
 ---
 

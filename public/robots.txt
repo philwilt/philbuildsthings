@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://philbuildsstuff.com/sitemap.xml
+Sitemap: https://philbuildsthings.com/sitemap.xml
