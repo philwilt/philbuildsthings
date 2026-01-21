@@ -99,14 +99,12 @@ const Home = () => {
             </p>
 
             <p>
-              <span className="font-semibold text-white">Phil Takes Photos</span> is where I
-              explore travel, surreal landscapes, infrared photography, and cinematic visuals —
-              blending technical tools with artistic curiosity.
+              <span className="font-semibold text-white">Phil Takes Photos</span> is where I explore
+              travel, surreal landscapes, infrared photography, and cinematic visuals — blending
+              technical tools with artistic curiosity.
             </p>
 
-            <p>
-              If you're curious about the creative side of my work, you can find it here:
-            </p>
+            <p>If you're curious about the creative side of my work, you can find it here:</p>
           </div>
 
           <div className="mt-10">
