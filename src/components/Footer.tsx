@@ -39,6 +39,30 @@ const Footer = () => {
             </a>
 
             <a
+              href="https://www.facebook.com/philbuildsthings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Facebook"
+            >
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.026 4.388 11.022 10.125 11.927v-8.437H7.078v-3.49h3.047V9.413c0-3.021 1.792-4.69 4.533-4.69 1.313 0 2.686.236 2.686.236v2.965H15.83c-1.492 0-1.958.931-1.958 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.095 24 18.099 24 12.073z" />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@PhilBuildsThings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="YouTube"
+            >
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.499 6.203a3.008 3.008 0 00-2.12-2.13C19.505 3.566 12 3.566 12 3.566s-7.505 0-9.379.507a3.008 3.008 0 00-2.12 2.13A31.18 31.18 0 000 12a31.18 31.18 0 00.501 5.797 3.008 3.008 0 002.12 2.13c1.874.507 9.379.507 9.379.507s7.505 0 9.379-.507a3.008 3.008 0 002.12-2.13A31.18 31.18 0 0024 12a31.18 31.18 0 00-.501-5.797zM9.6 15.568V8.432L15.818 12 9.6 15.568z" />
+              </svg>
+            </a>
+
+            <a
               href="https://x.com/philbuildsthing"
               target="_blank"
               rel="noopener noreferrer"
