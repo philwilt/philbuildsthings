@@ -78,6 +78,7 @@ const Home = () => {
             <PlaceholderImage
               title="3D Printing & Prototyping"
               gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
+              to="/printing"
             />
             <PlaceholderImage
               title="Raspberry Pi Projects"
