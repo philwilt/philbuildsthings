@@ -8,14 +8,17 @@ const Home = () => {
       <Hero />
 
       {/* What I Do Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-12 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">What I Do</h2>
+          <h2 className="text-4xl font-bold text-center text-white mb-4">What We Build</h2>
+          <p className="text-center text-gray-400 max-w-3xl mx-auto mb-12 text-lg">
+            Software, AI, tools, and physical builds shared as they&apos;re made.
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card
               title="Software & Systems"
-              description="Full-stack development, cloud architecture, distributed systems, and production platforms built to scale."
+              description="Production applications, cloud architecture, and reliable platforms built to solve real-world problems."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -30,7 +33,7 @@ const Home = () => {
 
             <Card
               title="AI & Agentic Pipelines"
-              description="Retrieval-augmented generation, policy-driven execution graphs, evaluation systems, and real-world AI tooling."
+              description="Applied AI workflows, evaluation systems, and practical automation designed to be useful in production."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -45,7 +48,7 @@ const Home = () => {
 
             <Card
               title="Maker Lab"
-              description="Laser cutting and engraving, 3D printing, Raspberry Pi projects, and physical product design — bridging code and craftsmanship."
+              description="Laser work, 3D printing, Raspberry Pi projects, and physical prototypes that connect code with the workbench."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -62,31 +65,32 @@ const Home = () => {
       </section>
 
       {/* Placeholder Image Grid */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-10 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Work</h2>
+          <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Builds</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <PlaceholderImage
-              title="Cloud & AI Systems"
-              gradient="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
+              title="3D Printing & Prototyping"
+              gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
+              imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/printer-setup.jpg"
+              to="/projects"
             />
             <PlaceholderImage
               title="Laser & Fabrication"
               gradient="bg-gradient-to-br from-orange-500 via-red-500 to-pink-500"
-            />
-            <PlaceholderImage
-              title="3D Printing & Prototyping"
-              gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
-              to="/printing"
-            />
-            <PlaceholderImage
-              title="Raspberry Pi Projects"
-              gradient="bg-gradient-to-br from-pink-500 via-rose-500 to-red-500"
+              imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/laser-delivery.jpg"
             />
             <PlaceholderImage
               title="Creative Technology"
               gradient="bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500"
+              imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/gaggi.jpg"
+              to="/creative-technology"
+            />
+            <PlaceholderImage
+              title="Cloud & AI Systems"
+              gradient="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
+              imageUrl="/img/cloud-ai-robot.svg"
             />
           </div>
         </div>
@@ -95,21 +99,21 @@ const Home = () => {
       {/* Cross-Link to Phil Takes Photos */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Beyond the Code</h2>
+          <h2 className="text-4xl font-bold text-white mb-8">Phil Takes Photos</h2>
 
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
             <p>
-              While most of my work lives in software, I also run a creative photography and visual
-              storytelling project.
+              Phil Takes Photos is centered on infrared photography, capturing light beyond the
+              visible spectrum to create surreal landscapes where familiar places feel transformed.
             </p>
 
             <p>
-              <span className="font-semibold text-white">Phil Takes Photos</span> is where I explore
-              travel, surreal landscapes, infrared photography, and cinematic visuals — blending
-              technical tools with artistic curiosity.
+              From Pacific Northwest atmosphere to travel work across Taipei, Saigon, and Patagonia,
+              each series explores the edge between documentary realism and dreamlike visual
+              storytelling.
             </p>
 
-            <p>If you're curious about the creative side of my work, you can find it here:</p>
+            <p>Photography and visual stories live here:</p>
           </div>
 
           <div className="mt-10">

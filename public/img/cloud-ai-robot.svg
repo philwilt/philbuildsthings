@@ -1,0 +1,77 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud and AI Robot Illustration</title>
+  <desc id="desc">A playful cloud scene with a cute robot in a modern tech style.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1140 270) rotate(120) scale(450 380)">
+      <stop stop-color="#A5F3FC" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#A5F3FC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robotBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="robotAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g opacity="0.16">
+    <circle cx="240" cy="160" r="3" fill="#E0F2FE"/>
+    <circle cx="440" cy="240" r="2" fill="#E0F2FE"/>
+    <circle cx="640" cy="120" r="3" fill="#E0F2FE"/>
+    <circle cx="980" cy="190" r="2" fill="#E0F2FE"/>
+    <circle cx="1320" cy="140" r="3" fill="#E0F2FE"/>
+    <circle cx="1480" cy="260" r="2" fill="#E0F2FE"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <path d="M1015 270C1015 226 1049 190 1097 190C1123 190 1147 201 1163 218C1174 212 1186 208 1200 208C1240 208 1273 238 1273 275C1273 279 1273 283 1272 287C1300 299 1320 325 1320 355C1320 395 1287 428 1246 428H1102C1038 428 986 379 986 318C986 301 991 285 1001 271C1006 270 1010 270 1015 270Z" fill="#DBEAFE"/>
+    <path d="M460 320C460 279 492 246 533 246C550 246 565 251 578 260C591 236 617 220 646 220C682 220 713 244 722 277C728 275 734 274 741 274C776 274 805 301 805 334C805 367 776 394 741 394H531C491 394 458 362 458 323C458 322 458 321 460 320Z" fill="#C7D2FE" fill-opacity="0.92"/>
+  </g>
+
+  <g transform="translate(760 470)" filter="url(#softShadow)">
+    <ellipse cx="0" cy="180" rx="170" ry="26" fill="#0F172A" fill-opacity="0.28"/>
+
+    <rect x="-110" y="-60" width="220" height="250" rx="54" fill="url(#robotBody)"/>
+    <rect x="-95" y="-42" width="190" height="96" rx="40" fill="#0F172A"/>
+
+    <circle cx="-42" cy="6" r="19" fill="url(#robotAccent)"/>
+    <circle cx="42" cy="6" r="19" fill="url(#robotAccent)"/>
+    <circle cx="-42" cy="6" r="8" fill="#E0F2FE"/>
+    <circle cx="42" cy="6" r="8" fill="#E0F2FE"/>
+
+    <rect x="-52" y="98" width="104" height="18" rx="9" fill="#94A3B8"/>
+
+    <rect x="-148" y="18" width="38" height="116" rx="19" fill="url(#robotBody)"/>
+    <rect x="110" y="18" width="38" height="116" rx="19" fill="url(#robotBody)"/>
+    <circle cx="-129" cy="138" r="20" fill="url(#robotAccent)"/>
+    <circle cx="129" cy="138" r="20" fill="url(#robotAccent)"/>
+
+    <rect x="-78" y="174" width="50" height="82" rx="22" fill="url(#robotBody)"/>
+    <rect x="28" y="174" width="50" height="82" rx="22" fill="url(#robotBody)"/>
+
+    <rect x="-20" y="-110" width="40" height="48" rx="18" fill="url(#robotBody)"/>
+    <circle cx="0" cy="-120" r="16" fill="url(#robotAccent)"/>
+    <circle cx="0" cy="-120" r="6" fill="#E0F2FE"/>
+
+    <path d="M-28 38C-20 48 -9 54 0 54C9 54 20 48 28 38" stroke="#22D3EE" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.35">
+    <path d="M210 705C360 605 580 575 760 635" stroke="#BAE6FD" stroke-width="3" stroke-dasharray="10 12"/>
+    <path d="M850 650C980 610 1170 620 1370 725" stroke="#BAE6FD" stroke-width="3" stroke-dasharray="10 12"/>
+  </g>
+</svg>

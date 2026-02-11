@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-sm">
-            © {currentYear} Phil Wilt. All rights reserved.
+            © {currentYear} Phil Builds Things LLC. All rights reserved.
           </div>
 
           <div className="flex space-x-6">
@@ -63,19 +63,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://x.com/philbuildsthing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="X (Twitter)"
-            >
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-            </a>
-
-            <a
-              href="mailto:phil@example.com"
+              href="mailto:hello@philbuildsthings.com"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Email"
             >

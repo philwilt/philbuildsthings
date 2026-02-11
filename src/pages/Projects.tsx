@@ -1,31 +1,57 @@
+import { printingProjects } from '../data/printingProjects'
+import ProjectMediaCard from '../components/ProjectMediaCard'
+
 const Projects = () => {
   return (
     <div className="bg-gray-900 min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-5xl font-bold text-white mb-8">Projects</h1>
-        <p className="text-xl text-gray-400 mb-12">Coming Soon</p>
-
-        <div className="bg-gray-800 border border-gray-700 rounded-lg p-12 max-w-2xl mx-auto">
-          <svg
-            className="w-24 h-24 mx-auto mb-6 text-gray-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-            />
-          </svg>
-
-          <h2 className="text-2xl font-bold text-white mb-4">Project Showcase In Development</h2>
-          <p className="text-gray-400 leading-relaxed">
-            This section will feature detailed case studies of software systems, AI pipelines, and
-            maker projects. Check back soon for updates!
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <h1 className="text-5xl font-bold text-white mb-4">Projects</h1>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Real builds from Phil Builds Things LLC.
           </p>
         </div>
+
+        <section className="mb-16">
+          <div className="flex items-center justify-between gap-4 mb-8 flex-wrap">
+            <h2 className="text-3xl font-bold text-white">3D Printing & Prototyping</h2>
+            <a
+              href="https://www.youtube.com/channel/UChYzZiHtt2lw5vXJerR2MOg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-400 hover:text-primary-300 font-semibold"
+            >
+              View all on YouTube
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {printingProjects.map((project) => (
+              <ProjectMediaCard key={project.id} project={project} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold text-white mb-6">More Project Tracks</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-8">
+              <p className="text-xs uppercase tracking-wider text-primary-400 mb-3">Coming Soon</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Cloud & AI Systems</h3>
+              <p className="text-gray-400">
+                Case studies for production AI workflows, architecture decisions, and deployment
+                patterns.
+              </p>
+            </div>
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-8">
+              <p className="text-xs uppercase tracking-wider text-primary-400 mb-3">Coming Soon</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Laser & Fabrication</h3>
+              <p className="text-gray-400">
+                Laser cutting and fabrication projects.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )

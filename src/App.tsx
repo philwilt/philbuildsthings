@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Resume from './pages/Resume'
 import Projects from './pages/Projects'
 import Printing from './pages/Printing'
+import CreativeTechnology from './pages/CreativeTechnology'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/printing" element={<Printing />} />
+          <Route path="/creative-technology" element={<CreativeTechnology />} />
         </Routes>
       </main>
       <Footer />
