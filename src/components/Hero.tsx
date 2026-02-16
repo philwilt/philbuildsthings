@@ -5,6 +5,11 @@ const Hero = () => {
     <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-20 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
+          <img
+            src="/logo.png"
+            alt="Phil Builds Things logo"
+            className="w-40 h-40 sm:w-48 sm:h-48 mx-auto drop-shadow-2xl rounded-full"
+          />
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Phil Builds Things
           </h1>
