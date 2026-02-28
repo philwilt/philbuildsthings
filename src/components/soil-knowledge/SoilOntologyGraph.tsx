@@ -114,7 +114,7 @@ const INFLUENCE_TYPES = new Set(['improves', 'increases', 'supports', 'enables']
 function getEdgeStyle(
   edgeType: string,
   highlighted: boolean,
-  dimmed: boolean,
+  dimmed: boolean
 ): { stroke: string; strokeWidth: number; strokeDasharray?: string; opacity: number } {
   if (edgeType === 'domain' || edgeType === 'contains') {
     return {
@@ -300,7 +300,7 @@ function EdgeLabels({
     (e) =>
       (e.from === hoveredNode || e.to === hoveredNode) &&
       e.type !== 'domain' &&
-      e.type !== 'contains',
+      e.type !== 'contains'
   )
 
   return (
@@ -365,8 +365,7 @@ function Tooltip({
       : (DOMAIN_COLORS[node.type === 'domain' ? node.id : (node.domain ?? '')] ?? { glow: '#888' })
 
   const connections = CONCEPT_EDGES.filter(
-    (e) =>
-      (e.from === nodeId || e.to === nodeId) && e.type !== 'domain' && e.type !== 'contains',
+    (e) => (e.from === nodeId || e.to === nodeId) && e.type !== 'domain' && e.type !== 'contains'
   )
 
   return (
@@ -427,16 +426,13 @@ function GraphInner() {
     return { nodes: set, edges: edgeIds }
   }, [hoveredNode])
 
-  const onNodeMouseEnter = useCallback(
-    (_event: ReactMouseEvent, node: Node<SoilNodeData>) => {
-      if (leaveTimer.current) {
-        clearTimeout(leaveTimer.current)
-        leaveTimer.current = null
-      }
-      setHoveredNode(node.id)
-    },
-    [],
-  )
+  const onNodeMouseEnter = useCallback((_event: ReactMouseEvent, node: Node<SoilNodeData>) => {
+    if (leaveTimer.current) {
+      clearTimeout(leaveTimer.current)
+      leaveTimer.current = null
+    }
+    setHoveredNode(node.id)
+  }, [])
 
   const onNodeMouseLeave = useCallback(() => {
     if (leaveTimer.current) clearTimeout(leaveTimer.current)
@@ -506,7 +502,6 @@ function GraphInner() {
         zoomOnScroll={false}
         zoomOnPinch
         zoomOnDoubleClick={false}
-        preventScrolling
         minZoom={0.2}
         maxZoom={1.5}
         nodesDraggable={false}
