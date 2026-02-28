@@ -30,7 +30,8 @@ const Navbar = () => {
               alt="Phil Builds Things logo"
               className="h-9 w-9 rounded-md object-cover ring-1 ring-white/15"
             />
-            <span>Phil Builds Things</span>
+            <span className="hidden sm:inline">Phil Builds Things</span>
+            <span className="sm:hidden text-base">PBT</span>
           </Link>
 
           <div className="flex items-center space-x-8">

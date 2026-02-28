@@ -283,6 +283,61 @@ const nodeTypes = {
   concept: ConceptNode,
 }
 
+// --- Edge label overlay (HTML, renders above nodes) ---
+
+function EdgeLabels({
+  hoveredNode,
+  positions,
+}: {
+  hoveredNode: string | null
+  positions: Record<string, { x: number; y: number }>
+}) {
+  const { flowToScreenPosition } = useReactFlow()
+
+  if (!hoveredNode) return null
+
+  const activeEdges = CONCEPT_EDGES.filter(
+    (e) =>
+      (e.from === hoveredNode || e.to === hoveredNode) &&
+      e.type !== 'domain' &&
+      e.type !== 'contains',
+  )
+
+  return (
+    <>
+      {activeEdges.map((e) => {
+        const from = positions[e.from]
+        const to = positions[e.to]
+        if (!from || !to) return null
+
+        const mid = { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2 }
+        const screen = flowToScreenPosition(mid)
+
+        const color = CAUSAL_TYPES.has(e.type) ? '#f59e0b' : '#34d399'
+
+        return (
+          <div
+            key={`${e.from}-${e.to}-label`}
+            className="pointer-events-none fixed z-50 rounded-md px-1.5 py-0.5 text-xs font-semibold italic"
+            style={{
+              left: screen.x,
+              top: screen.y,
+              transform: 'translate(-50%, -50%)',
+              background: 'rgba(10,10,20,0.45)',
+              color,
+              border: `1px solid ${color}40`,
+              backdropFilter: 'blur(4px)',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {e.type}
+          </div>
+        )
+      })}
+    </>
+  )
+}
+
 // --- Tooltip ---
 
 function Tooltip({
@@ -433,26 +488,12 @@ function GraphInner() {
           opacity: style.opacity,
           transition: 'opacity 0.4s ease, stroke 0.4s ease, stroke-width 0.4s ease',
         },
-        label:
-          highlighted && e.type !== 'domain' && e.type !== 'contains' ? e.type : undefined,
-        labelStyle: {
-          fill: '#d1d5db',
-          fontSize: 10,
-          fontWeight: 500,
-          fontStyle: 'italic' as const,
-        },
-        labelBgStyle: {
-          fill: '#0f0f19',
-          fillOpacity: 0.9,
-        },
-        labelBgPadding: [6, 3] as [number, number],
-        labelBgBorderRadius: 6,
       }
     })
   }, [connectedSet])
 
   return (
-    <div className="relative w-full" style={{ height: 750 }}>
+    <div className="relative w-full h-[450px] sm:h-[550px] md:h-[650px] lg:h-[750px]">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -460,18 +501,21 @@ function GraphInner() {
         onNodeMouseEnter={onNodeMouseEnter}
         onNodeMouseLeave={onNodeMouseLeave}
         fitView
-        fitViewOptions={{ padding: 0.25 }}
-        panOnDrag={false}
+        fitViewOptions={{ padding: 0.15 }}
+        panOnDrag
         zoomOnScroll={false}
-        zoomOnPinch={false}
+        zoomOnPinch
         zoomOnDoubleClick={false}
-        preventScrolling={false}
+        preventScrolling
+        minZoom={0.2}
+        maxZoom={1.5}
         nodesDraggable={false}
         nodesConnectable={false}
         elementsSelectable={false}
         proOptions={{ hideAttribution: true }}
         style={{ background: 'transparent' }}
       />
+      <EdgeLabels hoveredNode={hoveredNode} positions={positions} />
       <Tooltip nodeId={hoveredNode} positions={positions} />
     </div>
   )
