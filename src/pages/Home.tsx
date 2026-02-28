@@ -1,26 +1,68 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Card from '../components/Card'
 import PlaceholderImage from '../components/PlaceholderImage'
 import SoilKnowledgePreview from '../components/soil-knowledge/SoilKnowledgePreview'
 
+const PHOTOS = [
+  { src: 'https://d38881i5te6f0.cloudfront.net/vietnam/vietnam-2-preview.png',   alt: 'Vietnam' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/vietnam/vietnam-15-preview.png',  alt: 'Vietnam' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/vietnam/vietnam-1-preview.png',   alt: 'Vietnam' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/taipei/taipei-7-preview.jpg',     alt: 'Taipei' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/europe/europe-6-preview.png',     alt: 'Europe' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/yakima/yakima-9-preview.png',     alt: 'Yakima' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/yakima/yakima-11-preview.png',    alt: 'Yakima' },
+  { src: 'https://d38881i5te6f0.cloudfront.net/yakima/yakima-16-preview.png',    alt: 'Yakima' },
+]
+
+// Fixed positions — photos are randomly assigned to these slots on each page load
+const SLOTS = [
+  { top: 0,   left: 0,   rotate: -5, zIndex: 1, opacity: 0.55 },
+  { top: 4,   right: 4,  rotate:  4, zIndex: 1, opacity: 0.60 },
+  { bottom: 0, left: 12, rotate:  3, zIndex: 1, opacity: 0.65 },
+  { bottom: 4, right: 0, rotate: -3, zIndex: 1, opacity: 0.65 },
+  { bottom: 20, left: 36, rotate: -2, zIndex: 2, opacity: 0.80 },
+  { top: 36,  left: 60,  rotate:  1, zIndex: 3, opacity: 0.90 },
+  { top: 20,  right: 20, rotate: -2, zIndex: 3, opacity: 0.90 },
+  { top: 60,  left: 20,  rotate:  2, zIndex: 4, opacity: 1.00 },
+]
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 const Home = () => {
+  const [shuffled, setShuffled] = useState(() => shuffle(PHOTOS))
+  const [fading, setFading] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFading(true)
+      setTimeout(() => {
+        setShuffled(shuffle(PHOTOS))
+        setFading(false)
+      }, 2000)
+    }, 7000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <div>
       <Hero />
 
       {/* What I Do Section */}
-      <section className="py-12 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-white mb-4">What We Build</h2>
-          <p className="text-center text-gray-400 max-w-3xl mx-auto mb-12 text-lg">
-            Software, AI, tools, and physical builds shared as they&apos;re made.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-8 bg-gray-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card
               title="Software & Systems"
-              description="Production applications, cloud architecture, and reliable platforms built to solve real-world problems."
+              description="Production applications, architecture, and reliable platforms built to solve real-world problems."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -35,7 +77,7 @@ const Home = () => {
 
             <Card
               title="AI & Agentic Pipelines"
-              description="Applied AI workflows, evaluation systems, and practical automation designed to be useful in production."
+              description="Applied agentic AI-enabled workflows and practical automation designed to be useful in production."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -50,7 +92,7 @@ const Home = () => {
 
             <Card
               title="Maker Lab"
-              description="Laser work, 3D printing, Raspberry Pi projects, and physical prototypes that connect code with the workbench."
+              description="3D printing, laser powers, robots, and physical prototypes that connect code with the workbench."
               icon={
                 <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -67,10 +109,8 @@ const Home = () => {
       </section>
 
       {/* Placeholder Image Grid */}
-      <section className="py-10 bg-gray-800">
+      <section className="py-6 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Builds</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <PlaceholderImage
               title="3D Printing & Prototyping"
@@ -96,7 +136,12 @@ const Home = () => {
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
                 <p className="text-stone-400 text-xs leading-relaxed mb-2">
@@ -123,34 +168,54 @@ const Home = () => {
       </section>
 
       {/* Cross-Link to Phil Takes Photos */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Phil Takes Photos</h2>
+      <section className="py-16 bg-gray-900 overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-10">
+            {/* Floating image scatter — photos randomly assigned to slots on each load */}
+            <div className="relative flex-shrink-0 w-80 h-72 hidden sm:block">
+              {SLOTS.map((slot, i) => (
+                <img
+                  key={i}
+                  src={shuffled[i].src}
+                  alt={`${shuffled[i].alt} photography`}
+                  className="absolute w-40 h-28 object-cover rounded-lg"
+                  style={{
+                    top: slot.top,
+                    bottom: (slot as { bottom?: number }).bottom,
+                    left: slot.left,
+                    right: (slot as { right?: number }).right,
+                    transform: `rotate(${slot.rotate}deg)`,
+                    zIndex: slot.zIndex,
+                    opacity: fading ? 0 : slot.opacity,
+                    boxShadow: slot.zIndex >= 3 ? '0 10px 25px rgba(0,0,0,0.5)' : '0 4px 12px rgba(0,0,0,0.35)',
+                    transition: 'opacity 2s ease',
+                  }}
+                />
+              ))}
+            </div>
 
-          <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-            <p>
-              Phil Takes Photos is centered on infrared photography, capturing light beyond the
-              visible spectrum to create surreal landscapes where familiar places feel transformed.
-            </p>
-
-            <p>
-              From Pacific Northwest atmosphere to travel work across Taipei, Saigon, and Patagonia,
-              each series explores the edge between documentary realism and dreamlike visual
-              storytelling.
-            </p>
-
-            <p>Photography and visual stories live here:</p>
-          </div>
-
-          <div className="mt-10">
-            <a
-              href="https://philtakesphotos.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
-            >
-              Visit Phil Takes Photos
-            </a>
+            {/* Text + CTA */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold text-white mb-4">Phil Takes Photos</h2>
+              <div className="space-y-3 text-gray-400 leading-relaxed mb-6">
+                <p>
+                  Infrared photography capturing light beyond the visible spectrum — surreal
+                  landscapes where familiar places feel transformed.
+                </p>
+                <p>
+                  Pacific Northwest atmosphere, Taipei, Saigon, Patagonia. Documentary realism meets
+                  dreamlike visual storytelling.
+                </p>
+              </div>
+              <a
+                href="https://philtakesphotos.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+              >
+                Visit Phil Takes Photos
+              </a>
+            </div>
           </div>
         </div>
       </section>
