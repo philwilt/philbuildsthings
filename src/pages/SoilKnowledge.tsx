@@ -9,11 +9,11 @@ const SoilKnowledge = () => {
     <div>
       <SoilKnowledgeHero />
       <SoilKnowledgeOverview />
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-stone-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-3">How Soil Works</h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
+            <p className="text-stone-300 max-w-xl mx-auto">
               Everything in soil is connected. Hover over any circle to see how one part of the soil
               system affects another.
             </p>
@@ -40,11 +40,11 @@ const SoilKnowledge = () => {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-800">
+      <section className="py-16 bg-stone-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-3">How It Learns</h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
+            <p className="text-stone-300 max-w-xl mx-auto">
               Lectures, research papers, field notes, and lab reports all flow into a shared
               knowledge index — so the system can answer real questions with real science.
             </p>

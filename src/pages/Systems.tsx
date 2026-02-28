@@ -4,9 +4,9 @@ const systems = [
   {
     to: '/systems/soil-knowledge',
     label: 'Live',
-    title: 'Soil Knowledge',
+    title: 'Soil Knowledge AI',
     description:
-      'An agentic AI system that ingests agronomic research, soil data, and field reports to surface actionable insights for growers and agronomists.',
+      'A soil education and decision-support system that maps soil biology, structure, chemistry, water, and plant response. It uses AI to connect educational material, research, field notes, and soil data into practical guidance.',
     tags: ['RAG', 'Agents', 'Knowledge Graph'],
   },
 ]
@@ -31,22 +31,22 @@ const Systems = () => {
             <Link
               key={system.to}
               to={system.to}
-              className="bg-gray-800 border border-gray-700 rounded-lg p-8 hover:border-primary-500 transition-colors block group"
+              className="bg-gradient-to-br from-stone-900 via-emerald-950/50 to-stone-900 border border-emerald-800/60 rounded-lg p-8 hover:border-lime-400/70 transition-colors block group"
             >
               <div className="flex items-start justify-between gap-4 flex-wrap">
                 <div className="flex-1">
-                  <p className="text-xs uppercase tracking-wider text-primary-400 mb-2">
+                  <p className="text-xs uppercase tracking-wider text-lime-300 mb-2">
                     {system.label}
                   </p>
-                  <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
+                  <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors">
                     {system.title}
                   </h2>
-                  <p className="text-gray-400 leading-relaxed">{system.description}</p>
+                  <p className="text-stone-300 leading-relaxed">{system.description}</p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {system.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs px-2 py-1 rounded bg-gray-700 text-gray-300"
+                        className="text-xs px-2 py-1 rounded bg-emerald-950/60 border border-emerald-800/60 text-stone-200"
                       >
                         {tag}
                       </span>
@@ -54,7 +54,7 @@ const Systems = () => {
                   </div>
                 </div>
                 <svg
-                  className="w-5 h-5 text-gray-500 group-hover:text-primary-400 transition-colors flex-shrink-0 mt-1"
+                  className="w-5 h-5 text-emerald-400/70 group-hover:text-amber-300 transition-colors flex-shrink-0 mt-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
