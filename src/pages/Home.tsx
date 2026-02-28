@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Card from '../components/Card'
 import PlaceholderImage from '../components/PlaceholderImage'
+import SoilKnowledgePreview from '../components/soil-knowledge/SoilKnowledgePreview'
 
 const Home = () => {
   return (
@@ -76,6 +78,35 @@ const Home = () => {
               imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/printer-setup.jpg"
               to="/projects"
             />
+            <Link
+              to="/systems/soil-knowledge"
+              className="group block relative overflow-hidden rounded-lg aspect-video bg-gradient-to-br from-stone-900 via-emerald-950/50 to-stone-900 border border-emerald-800/60 hover:border-lime-400/70 transition-colors"
+            >
+              <div className="absolute inset-0 p-5 flex flex-col">
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-lime-300 mb-1">Live</p>
+                    <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors leading-tight">
+                      Soil Knowledge AI
+                    </h3>
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-emerald-400/70 group-hover:text-amber-300 transition-colors flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <p className="text-stone-400 text-xs leading-relaxed mb-2">
+                  AI that maps soil biology, chemistry, and plant response into practical guidance.
+                </p>
+                <div className="flex-1 min-h-0 flex items-center">
+                  <SoilKnowledgePreview />
+                </div>
+              </div>
+            </Link>
             <PlaceholderImage
               title="Laser & Fabrication"
               gradient="bg-gradient-to-br from-orange-500 via-red-500 to-pink-500"
@@ -86,12 +117,6 @@ const Home = () => {
               gradient="bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500"
               imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/gaggi.jpg"
               to="/creative-technology"
-            />
-            <PlaceholderImage
-              title="Agentic Systems"
-              gradient="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
-              imageUrl="/img/cloud-ai-robot.svg"
-              to="/systems"
             />
           </div>
         </div>
