@@ -502,6 +502,7 @@ function GraphInner() {
         zoomOnScroll={false}
         zoomOnPinch
         zoomOnDoubleClick={false}
+        preventScrolling={false}
         minZoom={0.2}
         maxZoom={1.5}
         nodesDraggable={false}
