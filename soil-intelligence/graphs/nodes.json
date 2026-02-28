@@ -1,0 +1,140 @@
+[
+  {
+    "id": "video_lecture",
+    "label": "Soil Health Lecture",
+    "type": "source",
+    "tooltip": "A recorded soil science lecture capturing expert knowledge."
+  },
+  {
+    "id": "saved_video",
+    "label": "Saved Video File",
+    "type": "artifact",
+    "tooltip": "Durable stored copy of the lecture for processing."
+  },
+  {
+    "id": "whisper",
+    "label": "Speech Transcription",
+    "type": "transform",
+    "tooltip": "Converts spoken soil education into text."
+  },
+  {
+    "id": "transcript",
+    "label": "Transcript",
+    "type": "artifact",
+    "tooltip": "Text version of the lecture content."
+  },
+  {
+    "id": "clean_transcript",
+    "label": "Clean Transcript",
+    "type": "artifact",
+    "tooltip": "Normalized and corrected transcript text."
+  },
+  {
+    "id": "chunks",
+    "label": "Knowledge Chunks",
+    "type": "artifact",
+    "tooltip": "Idea-level pieces of soil knowledge with metadata."
+  },
+  {
+    "id": "embeddings",
+    "label": "Semantic Embeddings",
+    "type": "artifact",
+    "tooltip": "Mathematical representations of soil concepts."
+  },
+  {
+    "id": "vector_index",
+    "label": "Soil Knowledge Index",
+    "type": "artifact",
+    "tooltip": "Searchable memory of soil education."
+  },
+  {
+    "id": "user_question",
+    "label": "Farmer Question",
+    "type": "source",
+    "tooltip": "A real-world soil question from a user."
+  },
+  {
+    "id": "retriever",
+    "label": "Knowledge Retrieval",
+    "type": "transform",
+    "tooltip": "Finds relevant soil knowledge for the question."
+  },
+  {
+    "id": "relevant_chunks",
+    "label": "Relevant Soil Knowledge",
+    "type": "artifact",
+    "tooltip": "Retrieved lecture knowledge related to the question."
+  },
+  {
+    "id": "llm",
+    "label": "Answer Generation",
+    "type": "transform",
+    "tooltip": "Produces a grounded soil guidance response."
+  },
+  {
+    "id": "answer",
+    "label": "Guidance Answer",
+    "type": "artifact",
+    "tooltip": "Final answer with supporting soil knowledge."
+  },
+  {
+    "id": "pdf_paper",
+    "label": "Soil Research Paper",
+    "type": "source",
+    "tooltip": "Published soil science research and technical documents."
+  },
+  {
+    "id": "field_notes",
+    "label": "Field Observations",
+    "type": "source",
+    "tooltip": "On-site soil notes from farms and field visits."
+  },
+  {
+    "id": "lab_report",
+    "label": "Soil Lab Report",
+    "type": "source",
+    "tooltip": "Laboratory soil analysis results."
+  },
+  {
+    "id": "doc_file",
+    "label": "Document File",
+    "type": "artifact",
+    "tooltip": "Stored PDF or text document."
+  },
+  {
+    "id": "ocr_extract",
+    "label": "Text Extraction",
+    "type": "transform",
+    "tooltip": "Extracts readable text from PDFs and scans."
+  },
+  {
+    "id": "doc_text",
+    "label": "Document Text",
+    "type": "artifact",
+    "tooltip": "Readable soil content from documents."
+  },
+  {
+    "id": "doc_clean",
+    "label": "Clean Text",
+    "type": "artifact",
+    "tooltip": "Normalized soil terminology and formatting."
+  },
+  {
+    "id": "doc_chunks",
+    "label": "Knowledge Chunks",
+    "type": "artifact",
+    "tooltip": "Soil knowledge segmented into idea units."
+  },
+  {
+    "id": "doc_embeddings",
+    "label": "Semantic Embeddings",
+    "type": "artifact",
+    "tooltip": "Vector meaning of soil knowledge."
+  },
+  {
+    "id": "vector_index",
+    "label": "Soil Knowledge Index",
+    "type": "artifact",
+    "tooltip": "Unified searchable soil knowledge memory."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "soil_chunks",
+    "label": "Soil Knowledge Chunks",
+    "type": "artifact",
+    "tooltip": "Segmented soil knowledge units."
+  },
+  {
+    "id": "concept_extraction",
+    "label": "Concept Extraction",
+    "type": "transform",
+    "tooltip": "Identifies soil concepts and relationships."
+  },
+  {
+    "id": "soil_concepts",
+    "label": "Soil Concepts",
+    "type": "artifact",
+    "tooltip": "Defined soil terms and entities."
+  },
+  {
+    "id": "soil_relationships",
+    "label": "Soil Relationships",
+    "type": "artifact",
+    "tooltip": "Connections between soil concepts."
+  },
+  {
+    "id": "soil_ontology",
+    "label": "Soil Ontology",
+    "type": "artifact",
+    "tooltip": "Structured map of soil knowledge."
+  },
+  {
+    "id": "ontology_enrichment",
+    "label": "Ontology Enrichment",
+    "type": "transform",
+    "tooltip": "Adds concept awareness to chunks."
+  },
+  {
+    "id": "enriched_chunks",
+    "label": "Ontology-Aware Chunks",
+    "type": "artifact",
+    "tooltip": "Chunks linked to soil concepts."
+  }
+]
