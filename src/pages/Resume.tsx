@@ -6,12 +6,9 @@ const Resume = () => {
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4">Phil Wilt</h1>
           <h2 className="text-2xl text-gray-400 mb-6">
-            Full-Stack Software Engineer / AI Systems Builder / Technical Architect
+            Technical Lead AI Software Engineer · Agentic Systems · AI Architecture
           </h2>
 
-          <button className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
-            Download PDF Resume
-          </button>
         </div>
 
         {/* About */}
@@ -166,7 +163,6 @@ const Resume = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h4 className="text-xl font-bold text-white">Lead Software Engineer</h4>
-                <span className="text-gray-400">Dec 2014 - Dec 2015 · 1 yr 1 mo</span>
               </div>
               <p className="text-primary-400 mb-3">Samepage Health · Seattle, WA</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -189,7 +185,6 @@ const Resume = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h4 className="text-xl font-bold text-white">Software Consultant</h4>
-                <span className="text-gray-400">Jan 2011 - Nov 2014 · 3 yrs 11 mos</span>
               </div>
               <p className="text-primary-400 mb-3">Self Employed · Greater Seattle Area · Remote</p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -214,7 +209,6 @@ const Resume = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h4 className="text-xl font-bold text-white">Software Developer</h4>
-                <span className="text-gray-400">Jul 2013 - Oct 2013 · 4 mos</span>
               </div>
               <p className="text-primary-400 mb-3">Undisclosed · Greater Seattle Area</p>
               <p className="text-gray-300">
@@ -230,7 +224,6 @@ const Resume = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h4 className="text-xl font-bold text-white">Software Engineer</h4>
-                <span className="text-gray-400">Jul 2012 · 1 mo</span>
               </div>
               <p className="text-primary-400 mb-3">Juked, Inc · Contract · Seattle, Washington</p>
               <p className="text-gray-300">
@@ -245,7 +238,6 @@ const Resume = () => {
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h4 className="text-xl font-bold text-white">Lead Software Developer</h4>
-                <span className="text-gray-400">2012</span>
               </div>
               <p className="text-primary-400 mb-3">
                 Microsoft Kinect Accelerator · Contract · Greater Seattle Area
@@ -270,7 +262,6 @@ const Resume = () => {
                 <h4 className="text-xl font-bold text-white">
                   Bachelor of Arts (B.A.) in Mathematics
                 </h4>
-                <span className="text-gray-400">2009 - 2014</span>
               </div>
               <p className="text-primary-400 mb-3">University of Washington</p>
               <p className="text-gray-300">
@@ -287,7 +278,7 @@ const Resume = () => {
                 <h4 className="text-xl font-bold text-white">
                   Certificate in AI, Machine Learning and Generative AI
                 </h4>
-                <span className="text-gray-400">Aug 2025 - May 2026</span>
+                <span className="text-gray-400">Aug 2025 - Present</span>
               </div>
               <p className="text-primary-400 mb-3">Texas McCombs School of Business</p>
               <p className="text-gray-300">
