@@ -8,7 +8,9 @@ const Navbar = () => {
       return location.pathname === '/'
     }
 
-    return paths.some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
+    return paths.some(
+      (path) => location.pathname === path || location.pathname.startsWith(`${path}/`)
+    )
   }
 
   const navLinkClass = (isActive: boolean) => {
@@ -43,18 +45,11 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/resume"
-              className={`${navLinkClass(isCurrentPage(['/resume']))} pb-1`}
-              aria-current={isCurrentPage(['/resume']) ? 'page' : undefined}
-            >
-              Resume
-            </Link>
-            <Link
               to="/projects"
               className={`${navLinkClass(isCurrentPage(['/projects', '/printing']))} pb-1`}
               aria-current={isCurrentPage(['/projects', '/printing']) ? 'page' : undefined}
             >
-              Projects
+              Builds
             </Link>
             <Link
               to="/systems"
@@ -71,6 +66,13 @@ const Navbar = () => {
             >
               Photos
             </a>
+            <Link
+              to="/resume"
+              className={`${navLinkClass(isCurrentPage(['/resume']))} pb-1`}
+              aria-current={isCurrentPage(['/resume']) ? 'page' : undefined}
+            >
+              Resume
+            </Link>
           </div>
         </div>
       </div>

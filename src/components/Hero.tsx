@@ -31,7 +31,7 @@ const Hero = () => {
               to="/projects"
               className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
-              Explore Projects
+              Explore Builds
             </Link>
 
             <a

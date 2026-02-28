@@ -66,6 +66,43 @@ const Resume = () => {
           <h3 className="text-2xl font-bold text-white mb-6">Experience</h3>
 
           <div className="space-y-8">
+            {/* IDEXX */}
+            <div className="border-l-4 border-primary-500 pl-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h4 className="text-xl font-bold text-white">Technical Lead AI Software Engineer</h4>
+                <span className="text-gray-400">Feb 2026 - Present</span>
+              </div>
+              <p className="text-primary-400 mb-3">IDEXX · Full-time</p>
+              <div className="text-gray-300 space-y-3 leading-relaxed">
+                <p>
+                  Leading the design and delivery of AI-powered platform capabilities within a
+                  regulated, mission-critical veterinary software ecosystem. Responsible for shaping
+                  AI architecture across product lines, ensuring coherence between model-driven
+                  workflows, core platform services, and customer-facing applications.
+                </p>
+                <p>
+                  Driving end-to-end AI initiatives — from problem framing and data strategy to
+                  model integration, evaluation frameworks, and production rollout. Partnering
+                  cross-functionally with product, platform, data, and domain experts to embed AI
+                  safely and responsibly into high-impact clinical and operational workflows.
+                </p>
+                <p>
+                  Architecting scalable infrastructure for agentic systems, retrieval-augmented
+                  workflows, and structured model orchestration, with an emphasis on correctness,
+                  observability, and deterministic execution in regulated environments. Establishing
+                  engineering patterns and guardrails for model evaluation, safety validation, and
+                  progressive rollout across distributed teams.
+                </p>
+                <p>
+                  Focused on building durable AI capabilities that compound over time — not just
+                  features, but platform primitives that elevate the entire product surface.
+                </p>
+              </div>
+              <p className="text-gray-500 text-sm mt-3">
+                Agentic AI Development · Generative AI
+              </p>
+            </div>
+
             {/* Aha! */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
