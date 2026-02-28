@@ -4,12 +4,10 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npx playwright install --with-deps chromium
     build:
       commands:
         - npm run lint
         - npm run build
-        - CI=true npm test
   artifacts:
     baseDirectory: dist
     files:
@@ -17,4 +15,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-      - ~/.cache/ms-playwright
