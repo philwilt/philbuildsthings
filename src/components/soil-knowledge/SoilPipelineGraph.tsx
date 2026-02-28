@@ -423,7 +423,7 @@ function GraphInner() {
   }, [connectedSet])
 
   return (
-    <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
+    <div className="relative w-full h-[300px] sm:h-[340px] md:h-[380px] lg:h-[420px]">
       <ReactFlow
         nodes={nodes}
         edges={edges}
