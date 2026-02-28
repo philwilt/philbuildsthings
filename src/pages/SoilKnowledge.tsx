@@ -3,6 +3,7 @@ import SoilKnowledgeOverview from '../components/soil-knowledge/SoilKnowledgeOve
 import SoilOntologyGraph from '../components/soil-knowledge/SoilOntologyGraph'
 import SoilPipelineGraph from '../components/soil-knowledge/SoilPipelineGraph'
 import SoilKnowledgeFeatures from '../components/soil-knowledge/SoilKnowledgeFeatures'
+import SoilQueryExample from '../components/soil-knowledge/SoilQueryExample'
 
 const SoilKnowledge = () => {
   return (
@@ -76,6 +77,7 @@ const SoilKnowledge = () => {
           </div>
         </div>
       </section>
+      <SoilQueryExample />
       <SoilKnowledgeFeatures />
     </div>
   )
