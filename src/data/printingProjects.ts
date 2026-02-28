@@ -7,6 +7,27 @@ export interface PrintingProject {
 
 export const printingProjects: PrintingProject[] = [
   {
+    id: '44-_CIKt0As',
+    title: 'Articulated Glow Dinosaurs',
+    description:
+      'Multi-color, glow-in-the-dark articulated dinosaurs made as birthday gifts for two brothers and their dino-loving cousins — toys designed to be just as display-worthy as they are fun to play with. Printed fully assembled on a Bambu Lab multi-material system using PLA, silk, and glow filaments, each dinosaur moves straight off the build plate and glows at night. The project became an exploration in multi-material workflows and small-batch production, turning a one-off gift into a repeatable maker process.',
+    imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/dino-thumbnail.jpg',
+  },
+  {
+    id: 'aJfdrzwBa-Y',
+    title: 'Year of the Horse',
+    description:
+      'Creative Bambu print celebrating the year of the horse as a reminder to keep building toward what is next.',
+    imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/year-of-the-horse.jpg',
+  },
+  {
+    id: 'zRj4f7F0gGw',
+    title: 'Spiral Orb Pendant Light',
+    description:
+      'This spiral orb pendant light explores translucency and organic geometry through a 3D-printed green PETG shade that diffuses light into soft gradients and layered shadows. A rear bayonet opening and integrated printed pendant and socket mount create a clean, fully assembled hanging fixture built entirely from printed components. Part of an ongoing 3D-printed lighting series, the piece blends material, form, and illumination into a sculptural object that feels alive with light.',
+    imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/orblamp.png',
+  },
+  {
     id: 'LibBE4F-9Fk',
     title: 'Plate Holder',
     description:
@@ -26,12 +47,5 @@ export const printingProjects: PrintingProject[] = [
     description:
       'Practical accessory print with magnet insets designed to keep filament waste contained while the machine is in use.',
     imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/poop-chute.jpg',
-  },
-  {
-    id: 'aJfdrzwBa-Y',
-    title: 'Year of the Horse',
-    description:
-      'Creative Bambu print celebrating the year of the horse as a reminder to keep building toward what is next.',
-    imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/year-of-the-horse.jpg',
   },
 ]
