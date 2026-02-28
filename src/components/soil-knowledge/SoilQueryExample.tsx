@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const sources = [
   {
     id: 1,
@@ -23,6 +25,10 @@ const sources = [
 ]
 
 const SoilQueryExample = () => {
+  const [active, setActive] = useState<number | null>(null)
+
+  const toggle = (id: number) => setActive((prev) => (prev === id ? null : id))
+
   return (
     <section className="py-16 bg-stone-950">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,22 +57,33 @@ const SoilQueryExample = () => {
         {/* Retrieved sources */}
         <div className="mb-6 ml-10">
           <p className="text-xs uppercase tracking-wider text-stone-500 mb-3">
-            Retrieved sources
+            Retrieved sources — tap to highlight in answer
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {sources.map((s) => (
               <div
                 key={s.id}
-                className="bg-stone-900 border border-stone-700/60 rounded-lg p-3 flex flex-col gap-2"
+                onClick={() => toggle(s.id)}
+                onMouseEnter={() => setActive(s.id)}
+                onMouseLeave={() => setActive(null)}
+                className={`rounded-lg p-3 flex flex-col gap-2 cursor-pointer border transition-all duration-200 ${
+                  active === s.id
+                    ? 'bg-lime-950/40 border-lime-600/60 shadow-[0_0_12px_rgba(163,230,53,0.15)]'
+                    : 'bg-stone-900 border-stone-700/60'
+                }`}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-xs font-medium text-lime-400 leading-tight">{s.title}</span>
+                  <span className={`text-xs font-medium leading-tight transition-colors duration-200 ${active === s.id ? 'text-lime-300' : 'text-lime-400'}`}>
+                    {s.title}
+                  </span>
                   <span className="flex-shrink-0 text-[10px] font-mono text-stone-500 bg-stone-800 px-1.5 py-0.5 rounded">
                     {s.timestamp}
                   </span>
                 </div>
                 <p className="text-xs text-stone-400 leading-relaxed">{s.excerpt}</p>
-                <span className="text-[10px] text-stone-600 font-mono">[{s.id}]</span>
+                <span className={`font-mono transition-all duration-200 ${active === s.id ? 'text-xs text-lime-400' : 'text-[10px] text-stone-600'}`}>
+                  [{s.id}]
+                </span>
               </div>
             ))}
           </div>
@@ -82,9 +99,39 @@ const SoilQueryExample = () => {
           <div className="bg-emerald-950/40 border border-emerald-800/50 rounded-lg rounded-tl-none px-4 py-4 flex-1">
             <p className="text-stone-200 text-sm leading-relaxed">
               Mycorrhizal fungi dramatically extend a plant's effective root reach into phosphorus-depleted zones. Their hyphae push beyond the root depletion zone where orthophosphate has already been exhausted, accessing pockets of soil the plant cannot reach on its own{' '}
-              <cite className="not-italic text-lime-400 font-mono text-xs">[1]</cite>. Beyond physical reach, the fungi also produce phosphatase enzymes that break down organic phosphorus compounds into plant-accessible orthophosphate — effectively unlocking a reservoir that roots alone cannot use{' '}
-              <cite className="not-italic text-lime-400 font-mono text-xs">[2]</cite>. Field data supports this: plots with colonization rates above 60% show yield gains around 40%, suggesting fungal networks compensate meaningfully when root architecture is limited by soil depletion{' '}
-              <cite className="not-italic text-lime-400 font-mono text-xs">[3]</cite>.
+              <cite
+                onMouseEnter={() => setActive(1)}
+                onMouseLeave={() => setActive(null)}
+                onClick={() => toggle(1)}
+                className={`not-italic font-mono cursor-pointer transition-all duration-200 ${
+                  active === 1 ? 'text-sm text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.8)]' : 'text-xs text-lime-400'
+                }`}
+              >
+                [1]
+              </cite>
+              . Beyond physical reach, the fungi also produce phosphatase enzymes that break down organic phosphorus compounds into plant-accessible orthophosphate — effectively unlocking a reservoir that roots alone cannot use{' '}
+              <cite
+                onMouseEnter={() => setActive(2)}
+                onMouseLeave={() => setActive(null)}
+                onClick={() => toggle(2)}
+                className={`not-italic font-mono cursor-pointer transition-all duration-200 ${
+                  active === 2 ? 'text-sm text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.8)]' : 'text-xs text-lime-400'
+                }`}
+              >
+                [2]
+              </cite>
+              . Field data supports this: plots with colonization rates above 60% show yield gains around 40%, suggesting fungal networks compensate meaningfully when root architecture is limited by soil depletion{' '}
+              <cite
+                onMouseEnter={() => setActive(3)}
+                onMouseLeave={() => setActive(null)}
+                onClick={() => toggle(3)}
+                className={`not-italic font-mono cursor-pointer transition-all duration-200 ${
+                  active === 3 ? 'text-sm text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.8)]' : 'text-xs text-lime-400'
+                }`}
+              >
+                [3]
+              </cite>
+              .
             </p>
           </div>
         </div>
