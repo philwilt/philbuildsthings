@@ -16,7 +16,9 @@ const Systems = () => {
     <div className="bg-gray-900 min-h-screen py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-xs uppercase tracking-wider text-primary-400 mb-3">Phil Builds Things</p>
+          <p className="text-xs uppercase tracking-wider text-primary-400 mb-3">
+            Phil Builds Things
+          </p>
           <h1 className="text-5xl font-bold text-white mb-4">Agentic Systems</h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Production AI workflows, applied agents, and intelligent systems built to solve real

@@ -1,3 +1,80 @@
+You are an expert front-end engineer and data visualization designer.
+
+Your task is to generate a production-quality React visualization of a soil ontology network using React Flow.
+
+The visualization should be visually clean, organic, and suitable for a soil science / agriculture website.
+
+--------------------------------
+GOAL
+--------------------------------
+Render a radial ontology graph showing soil knowledge relationships between domains and concepts.
+
+The graph must:
+- use a radial layout
+- cluster nodes by soil domain
+- use curved edges
+- support hover highlighting
+- show tooltips
+- look natural and scientific (not corporate)
+
+--------------------------------
+INPUT DATA
+--------------------------------
+Nodes and edges are defined in json in in ./graphs
+
+
+--------------------------------
+VISUAL DESIGN RULES
+--------------------------------
+
+Layout:
+- radial
+- soil at center
+- domains on inner ring
+- concepts on outer ring
+- cluster concepts near their domain
+
+Node styles:
+- core: large circle, dark soil brown
+- domain: medium circle, domain color
+- concept: small circle, lighter tint
+
+Domain colors:
+physical: #7a5c3a
+biology: #4f7d39
+chemistry: #4c6f8c
+water: #4aa3d8
+plant: #6aa84f
+
+Edges:
+- curved
+- thin
+- subtle color
+- highlight on hover
+
+Interaction:
+- hover node → highlight connected edges + nodes
+- tooltip with label
+- smooth transitions
+
+--------------------------------
+OUTPUT REQUIREMENTS
+--------------------------------
+
+Return a complete React component that:
+
+- uses React Flow
+- converts the ontology JSON into nodes + edges
+- calculates radial positions
+- applies styling
+- implements hover highlighting
+- includes tooltips
+- is ready to paste into a React app
+
+Use modern React with hooks.
+
+Do not include explanations — only code.
+
 # Visual goal
 
 Show soil knowledge as an interconnected system:
