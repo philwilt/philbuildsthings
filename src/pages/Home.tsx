@@ -88,9 +88,10 @@ const Home = () => {
               to="/creative-technology"
             />
             <PlaceholderImage
-              title="Cloud & AI Systems"
+              title="Agentic Systems"
               gradient="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
               imageUrl="/img/cloud-ai-robot.svg"
+              to="/systems"
             />
           </div>
         </div>

@@ -1,0 +1,11 @@
+[
+  { "from": "pdf_paper", "to": "doc_file", "label": "store" },
+  { "from": "field_notes", "to": "doc_file", "label": "capture" },
+  { "from": "lab_report", "to": "doc_file", "label": "ingest" },
+  { "from": "doc_file", "to": "ocr_extract", "label": "extract text" },
+  { "from": "ocr_extract", "to": "doc_text", "label": "output" },
+  { "from": "doc_text", "to": "doc_clean", "label": "normalize" },
+  { "from": "doc_clean", "to": "doc_chunks", "label": "segment" },
+  { "from": "doc_chunks", "to": "doc_embeddings", "label": "embed" },
+  { "from": "doc_embeddings", "to": "vector_index", "label": "index" }
+]

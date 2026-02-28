@@ -1,0 +1,22 @@
+[
+  { "from": "soil", "to": "physical", "type": "domain" },
+  { "from": "soil", "to": "biology", "type": "domain" },
+  { "from": "soil", "to": "chemistry", "type": "domain" },
+  { "from": "soil", "to": "water", "type": "domain" },
+  { "from": "soil", "to": "plant", "type": "domain" },
+
+  { "from": "physical", "to": "compaction", "type": "contains" },
+  { "from": "physical", "to": "pore_space", "type": "contains" },
+  { "from": "physical", "to": "aggregation", "type": "contains" },
+
+  { "from": "biology", "to": "organic_matter", "type": "contains" },
+  { "from": "biology", "to": "microbes", "type": "contains" },
+
+  { "from": "compaction", "to": "pore_space", "type": "reduces" },
+  { "from": "pore_space", "to": "infiltration", "type": "controls" },
+  { "from": "organic_matter", "to": "aggregation", "type": "improves" },
+  { "from": "aggregation", "to": "retention", "type": "increases" },
+  { "from": "retention", "to": "root_growth", "type": "supports" },
+  { "from": "nutrients", "to": "yield", "type": "enables" },
+  { "from": "ph", "to": "nutrients", "type": "regulates" }
+]

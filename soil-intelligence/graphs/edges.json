@@ -1,0 +1,14 @@
+[
+  { "from": "video_lecture", "to": "saved_video", "label": "record" },
+  { "from": "saved_video", "to": "whisper", "label": "transcribe" },
+  { "from": "whisper", "to": "transcript", "label": "save text" },
+  { "from": "transcript", "to": "clean_transcript", "label": "clean" },
+  { "from": "clean_transcript", "to": "chunks", "label": "segment" },
+  { "from": "chunks", "to": "embeddings", "label": "embed" },
+  { "from": "embeddings", "to": "vector_index", "label": "index" },
+  { "from": "user_question", "to": "retriever", "label": "ask" },
+  { "from": "retriever", "to": "vector_index", "label": "search" },
+  { "from": "vector_index", "to": "relevant_chunks", "label": "return" },
+  { "from": "relevant_chunks", "to": "llm", "label": "context" },
+  { "from": "llm", "to": "answer", "label": "generate" }
+]

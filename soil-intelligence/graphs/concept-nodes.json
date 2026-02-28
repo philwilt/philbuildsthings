@@ -1,0 +1,25 @@
+[
+  { "id": "soil", "label": "Soil System", "type": "core" },
+
+  { "id": "physical", "label": "Physical Structure", "type": "domain" },
+  { "id": "biology", "label": "Biology", "type": "domain" },
+  { "id": "chemistry", "label": "Chemistry", "type": "domain" },
+  { "id": "water", "label": "Water", "type": "domain" },
+  { "id": "plant", "label": "Plant Response", "type": "domain" },
+
+  { "id": "compaction", "label": "Compaction", "type": "concept", "domain": "physical" },
+  { "id": "pore_space", "label": "Pore Space", "type": "concept", "domain": "physical" },
+  { "id": "aggregation", "label": "Aggregation", "type": "concept", "domain": "physical" },
+
+  { "id": "organic_matter", "label": "Organic Matter", "type": "concept", "domain": "biology" },
+  { "id": "microbes", "label": "Microbial Activity", "type": "concept", "domain": "biology" },
+
+  { "id": "nutrients", "label": "Nutrients", "type": "concept", "domain": "chemistry" },
+  { "id": "ph", "label": "pH", "type": "concept", "domain": "chemistry" },
+
+  { "id": "infiltration", "label": "Infiltration", "type": "concept", "domain": "water" },
+  { "id": "retention", "label": "Water Retention", "type": "concept", "domain": "water" },
+
+  { "id": "root_growth", "label": "Root Growth", "type": "concept", "domain": "plant" },
+  { "id": "yield", "label": "Yield", "type": "concept", "domain": "plant" }
+]
