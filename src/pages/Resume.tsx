@@ -8,7 +8,6 @@ const Resume = () => {
           <h2 className="text-2xl text-gray-400 mb-6">
             Technical Lead AI Software Engineer · Agentic Systems · AI Architecture
           </h2>
-
         </div>
 
         {/* About */}
@@ -16,8 +15,8 @@ const Resume = () => {
           <h3 className="text-2xl font-bold text-white mb-4">About</h3>
           <div className="text-gray-300 leading-relaxed space-y-4">
             <p>
-              I'm a full-stack software engineer with 10+ years of experience designing scalable
-              SaaS systems, including 4+ years building production AI systems. My work focuses on
+              I'm a lead AI Software Engineer with 10+ years of experience designing scalable SaaS
+              systems, including 4+ years building production AI systems. My work focuses on
               AI-enabled platforms, execution architectures, and agent-like workflows—where
               retrieval, computation, and feedback loops work together to deliver reliable,
               real-world intelligence.
@@ -66,7 +65,9 @@ const Resume = () => {
             {/* IDEXX */}
             <div className="border-l-4 border-primary-500 pl-6">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h4 className="text-xl font-bold text-white">Technical Lead AI Software Engineer</h4>
+                <h4 className="text-xl font-bold text-white">
+                  Technical Lead AI Software Engineer
+                </h4>
                 <span className="text-gray-400">Feb 2026 - Present</span>
               </div>
               <p className="text-primary-400 mb-3">IDEXX · Full-time</p>
@@ -95,9 +96,7 @@ const Resume = () => {
                   features, but platform primitives that elevate the entire product surface.
                 </p>
               </div>
-              <p className="text-gray-500 text-sm mt-3">
-                Agentic AI Development · Generative AI
-              </p>
+              <p className="text-gray-500 text-sm mt-3">Agentic AI Development · Generative AI</p>
             </div>
 
             {/* Aha! */}

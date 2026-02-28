@@ -17,7 +17,7 @@ export const printingProjects: PrintingProject[] = [
     id: 'aJfdrzwBa-Y',
     title: 'Year of the Horse',
     description:
-      'Creative Bambu print celebrating the year of the horse as a reminder to keep building toward what is next.',
+      'Created for 2026 — a Fire Horse year — this glow-in-the-dark Bambu print reflects the Horse’s symbolism of momentum, independence, and forward drive. The luminous material brings the form to life after dark, turning it into a small personal totem for motion and becoming. A reminder to keep building, keep moving, and follow what’s next with energy and intent.',
     imageUrl: 'https://phil-builds-things.s3.us-east-1.amazonaws.com/year-of-the-horse.jpg',
   },
   {
