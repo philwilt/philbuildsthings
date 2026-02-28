@@ -14,8 +14,8 @@ const SoilKnowledge = () => {
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-3">How Soil Works</h2>
             <p className="text-stone-300 max-w-xl mx-auto">
-              Everything in soil is connected. Hover over any circle to see how one part of the soil
-              system affects another.
+              Everything in soil is connected. Tap or hover any circle to see how one part of the
+              soil system affects another.
             </p>
           </div>
           <SoilOntologyGraph />
@@ -36,7 +36,7 @@ const SoilKnowledge = () => {
               />{' '}
               influence
             </span>
-            <span className="text-gray-600 ml-2">Hover to explore</span>
+            <span className="text-gray-600 ml-2">Tap or hover to explore</span>
           </div>
         </div>
       </section>
@@ -46,7 +46,7 @@ const SoilKnowledge = () => {
             <h2 className="text-3xl font-bold text-white mb-3">How It Learns</h2>
             <p className="text-stone-300 max-w-xl mx-auto">
               Lectures, research papers, field notes, and lab reports all flow into a shared
-              knowledge index — so the system can answer real questions with real science.
+              knowledge index. Tap or hover any node to see how raw sources become answers.
             </p>
           </div>
           <SoilPipelineGraph />
@@ -72,7 +72,7 @@ const SoilKnowledge = () => {
               />{' '}
               artifact
             </span>
-            <span className="text-gray-600 ml-2">Hover to explore</span>
+            <span className="text-gray-600 ml-2">Tap or hover to explore</span>
           </div>
         </div>
       </section>
