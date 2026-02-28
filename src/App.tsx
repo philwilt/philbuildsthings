@@ -6,6 +6,8 @@ import Resume from './pages/Resume'
 import Projects from './pages/Projects'
 import Printing from './pages/Printing'
 import CreativeTechnology from './pages/CreativeTechnology'
+import Systems from './pages/Systems'
+import SoilKnowledge from './pages/SoilKnowledge'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/printing" element={<Printing />} />
           <Route path="/creative-technology" element={<CreativeTechnology />} />
+          <Route path="/systems" element={<Systems />} />
+          <Route path="/systems/soil-knowledge" element={<SoilKnowledge />} />
         </Routes>
       </main>
       <Footer />

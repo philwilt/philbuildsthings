@@ -55,6 +55,13 @@ const Navbar = () => {
             >
               Projects
             </Link>
+            <Link
+              to="/systems"
+              className={`${navLinkClass(isCurrentPage(['/systems']))} pb-1`}
+              aria-current={isCurrentPage(['/systems']) ? 'page' : undefined}
+            >
+              Systems
+            </Link>
             <a
               href="https://philtakesphotos.com"
               target="_blank"
