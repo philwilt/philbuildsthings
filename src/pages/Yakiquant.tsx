@@ -47,6 +47,42 @@ const Yakiquant = () => {
         </div>
       </section>
       <section className="py-16 bg-slate-950">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <a
+              href="https://quant.philbuildsthings.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
+            >
+              <img
+                src="/yakiquant/watchlist-preview.png"
+                alt="Yakiquant watchlist showing price chart with clickable anomaly points and news context"
+                className="w-full block"
+              />
+            </a>
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-3">Watchlist &amp; Price History</h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Track the full S&amp;P 500 universe with sparklines and live quotes. Select any
+                ticker to pull up its price history — then click the highlighted dots on the chart
+                to surface the news behind anomalous moves. Every spike and gap has a story; the
+                watchlist makes it easy to find it.
+              </p>
+              <a
+                href="https://quant.philbuildsthings.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sky-900/50 hover:bg-sky-800/60 border border-sky-700/60 hover:border-sky-500/70 text-sky-300 px-4 py-2 rounded-lg text-sm transition-colors"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+                Open Live Dashboard
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-3">How It Trades</h2>
