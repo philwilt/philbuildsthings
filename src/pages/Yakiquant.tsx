@@ -46,7 +46,7 @@ const Yakiquant = () => {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-slate-950">
+      <section className="py-16 bg-slate-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <a
@@ -56,7 +56,7 @@ const Yakiquant = () => {
               className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
             >
               <img
-                src="/yakiquant/watchlist-preview.png"
+                src="/yakiquant/watchlist-screenshot.png"
                 alt="Yakiquant watchlist showing price chart with clickable anomaly points and news context"
                 className="w-full block"
               />
