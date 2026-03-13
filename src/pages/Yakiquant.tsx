@@ -21,7 +21,7 @@ const Yakiquant = () => {
                 panel.
               </p>
               <a
-                href="https://quant.philbuildsthings.com"
+                href="https://quant.philbuildsthings.com/research"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-sky-900/50 hover:bg-sky-800/60 border border-sky-700/60 hover:border-sky-500/70 text-sky-300 px-4 py-2 rounded-lg text-sm transition-colors"
@@ -31,7 +31,7 @@ const Yakiquant = () => {
               </a>
             </div>
             <a
-              href="https://quant.philbuildsthings.com"
+              href="https://quant.philbuildsthings.com/research"
               target="_blank"
               rel="noopener noreferrer"
               className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
@@ -50,7 +50,7 @@ const Yakiquant = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <a
-              href="https://quant.philbuildsthings.com"
+              href="https://quant.philbuildsthings.com/watchlist"
               target="_blank"
               rel="noopener noreferrer"
               className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
@@ -70,7 +70,7 @@ const Yakiquant = () => {
                 watchlist makes it easy to find it.
               </p>
               <a
-                href="https://quant.philbuildsthings.com"
+                href="https://quant.philbuildsthings.com/watchlist"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-sky-900/50 hover:bg-sky-800/60 border border-sky-700/60 hover:border-sky-500/70 text-sky-300 px-4 py-2 rounded-lg text-sm transition-colors"
