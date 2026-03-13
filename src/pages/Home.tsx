@@ -113,12 +113,6 @@ const Home = () => {
       <section className="py-6 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <PlaceholderImage
-              title="3D Printing & Prototyping"
-              gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
-              imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/printer-setup.jpg"
-              to="/projects"
-            />
             <Link
               to="/systems/soil-knowledge"
               className="group block relative overflow-hidden rounded-lg aspect-video bg-gradient-to-br from-stone-900 via-emerald-950/50 to-stone-900 border border-emerald-800/60 hover:border-lime-400/70 transition-colors"
@@ -188,6 +182,12 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+            <PlaceholderImage
+              title="3D Printing & Prototyping"
+              gradient="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500"
+              imageUrl="https://phil-builds-things.s3.us-east-1.amazonaws.com/printer-setup.jpg"
+              to="/projects"
+            />
             <PlaceholderImage
               title="Laser & Fabrication"
               gradient="bg-gradient-to-br from-orange-500 via-red-500 to-pink-500"
