@@ -9,6 +9,43 @@ const Yakiquant = () => {
     <div>
       <YakiquantHero />
       <YakiquantOverview />
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-3">Research in the Dashboard</h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                The Research page surfaces every scanner result alongside its generated thesis and
+                adversarial review. Select a ticker to see the full trade setup: entry, stop,
+                target, catalyst classification, and the agent&rsquo;s recommendation — all in one
+                panel.
+              </p>
+              <a
+                href="https://quant.philbuildsthings.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sky-900/50 hover:bg-sky-800/60 border border-sky-700/60 hover:border-sky-500/70 text-sky-300 px-4 py-2 rounded-lg text-sm transition-colors"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+                Open Live Dashboard
+              </a>
+            </div>
+            <a
+              href="https://quant.philbuildsthings.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
+            >
+              <img
+                src="/yakiquant/trade-idea.png"
+                alt="Yakiquant research panel showing NVDA trade thesis and adversarial review"
+                className="w-full block"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-slate-900 to-transparent" />
+            </a>
+          </div>
+        </div>
+      </section>
       <section className="py-16 bg-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
