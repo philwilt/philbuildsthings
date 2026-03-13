@@ -18,31 +18,23 @@ const YakiquantOverview = () => {
               research log in real time.
             </p>
           </div>
-          <div className="bg-blue-950/40 rounded-lg border border-blue-800/70 p-5">
-            <p className="text-sm text-slate-200 font-medium mb-3">
-              When the scanner flags:{' '}
-              <span className="text-sky-300">
-                &ldquo;NVDA — post-earnings continuation&rdquo;
-              </span>
-            </p>
-            <p className="text-sm text-slate-300 mb-2">The agents reason:</p>
-            <ul className="text-sm text-slate-300 space-y-1">
-              <li className="flex items-center gap-2">
-                <span className="text-sky-500">&rarr;</span> news classifier filters signal from
-                noise
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sky-500">&rarr;</span> thesis agent structures the trade idea
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sky-500">&rarr;</span> adversarial agent probes for failure
-                modes
-              </li>
-            </ul>
-            <p className="text-xs text-slate-400 mt-3">
-              Only reviewed theses reach risk management and execution.
-            </p>
-          </div>
+          <a
+            href="https://quant.philbuildsthings.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block relative rounded-lg overflow-hidden border border-slate-700/60 hover:border-sky-600/60 transition-colors shadow-lg shadow-black/40"
+          >
+            <img
+              src="/yakiquant/dashboard-preview.png"
+              alt="Yakiquant live dashboard"
+              className="w-full block"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-slate-900 to-transparent" />
+            <div className="absolute bottom-2 left-3 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+              <span className="text-[10px] uppercase tracking-wider text-sky-300">Live Dashboard</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
