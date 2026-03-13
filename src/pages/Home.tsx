@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Card from '../components/Card'
 import PlaceholderImage from '../components/PlaceholderImage'
 import SoilKnowledgePreview from '../components/soil-knowledge/SoilKnowledgePreview'
+import YakiquantPreview from '../components/yakiquant/YakiquantPreview'
 
 const PHOTOS = [
   { src: 'https://d38881i5te6f0.cloudfront.net/vietnam/vietnam-2-preview.png',   alt: 'Vietnam' },
@@ -149,6 +150,41 @@ const Home = () => {
                 </p>
                 <div className="flex-1 min-h-0 flex items-center">
                   <SoilKnowledgePreview />
+                </div>
+              </div>
+            </Link>
+            <Link
+              to="/systems/yakiquant"
+              className="group block relative overflow-hidden rounded-lg aspect-video bg-gradient-to-br from-slate-900 via-blue-950/50 to-slate-900 border border-blue-800/60 hover:border-sky-400/70 transition-colors"
+            >
+              <div className="absolute inset-0 p-5 flex flex-col">
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-sky-300 mb-1">Live</p>
+                    <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors leading-tight">
+                      Yakiquant
+                    </h3>
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-blue-400/70 group-hover:text-amber-300 transition-colors flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+                <p className="text-slate-400 text-xs leading-relaxed mb-2">
+                  AI-assisted swing trading: scanner → Claude thesis → adversarial review →
+                  execution.
+                </p>
+                <div className="flex-1 min-h-0 flex items-center">
+                  <YakiquantPreview />
                 </div>
               </div>
             </Link>

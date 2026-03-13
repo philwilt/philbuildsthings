@@ -8,6 +8,7 @@ import Printing from './pages/Printing'
 import CreativeTechnology from './pages/CreativeTechnology'
 import Systems from './pages/Systems'
 import SoilKnowledge from './pages/SoilKnowledge'
+import Yakiquant from './pages/Yakiquant'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/creative-technology" element={<CreativeTechnology />} />
           <Route path="/systems" element={<Systems />} />
           <Route path="/systems/soil-knowledge" element={<SoilKnowledge />} />
+          <Route path="/systems/yakiquant" element={<Yakiquant />} />
         </Routes>
       </main>
       <Footer />
